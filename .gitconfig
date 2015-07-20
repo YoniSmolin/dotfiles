@@ -1,0 +1,10 @@
+[color]
+	ui = auto
+[core]
+	editor = vim
+[push]
+	default = upstream
+[merge]
+	conflictstyle = diff3
+[credential]
+	helper = cache
