@@ -2,6 +2,11 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+#Yoni: For vim + screen working together
+export TERM=screen-256color
+
+#xterm-256color
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -199,3 +204,9 @@ alias egrep='egrep $COLOR --exclude-dir=.svn'
 alias psgrep='ps -ef | grep -v grep | grep'
 # Show lots of useful info about the attached disks & storage devices:
 alias lsblkf='sudo lsblk -o MODEL,NAME,LABEL,FSTYPE,SIZE,MOUNTPOINT,UUID'
+
+# use 'most' to view man files
+export PAGER="most"
+
+# Adding directories to the search path
+export CDPATH=.:~/repositories/libfreenect2/examples
