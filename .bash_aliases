@@ -3,3 +3,7 @@ killProc () {
         echo "killing $pid"
         kill -9 $pid
 }
+
+boostPerformance () {
+	sudo ~/repositories/postFlash/maxPerformance.sh
+}
